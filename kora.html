@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="es" class="intro-on">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-en="Kora | Jose Rodríguez">Kora | Jose Rodríguez</title>
+  <meta name="description" content="Kora: plataforma de gestión académica para colegios de Colombia. En planeación, con lanzamiento previsto para el primer trimestre de 2027.">
+  <meta name="theme-color" content="#f4f7fc">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:title" content="Kora | Plataforma de gestión académica">
+  <meta property="og:description" content="Notas, boletines, asistencia, convivencia y comunicación con las familias en un solo lugar. Lanzamiento: primer trimestre de 2027.">
+  <link rel="icon" href="assets/img/kora/kora-emblema.png" type="image/png">
+  <script src="assets/js/prefs.js"></script>
+  <script>
+    try { if (sessionStorage.getItem("intro-kora") === "1" || matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.remove("intro-on"); } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/kora.css">
+  <link rel="prefetch" href="talento-caribe.html">
+  <link rel="prefetch" href="index.html">
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/vendor/lenis.min.js" defer></script>
+  <script src="assets/js/common.js" defer></script>
+  <script src="assets/js/kora.js" defer></script>
+</head>
+<body data-page="kora">
+  <a class="skip" href="#contenido" data-en="Skip to content">Saltar al contenido</a>
+
+  <!-- ===================== INTRO: la órbita, el emblema y el nombre ===================== -->
+  <div class="intro" data-intro aria-hidden="true">
+    <div class="intro__grid"></div>
+    <div class="intro__mark">
+      <svg class="intro__orbit" viewBox="0 0 300 300"><ellipse cx="150" cy="150" rx="138" ry="80" transform="rotate(-28 150 150)"/></svg>
+      <img class="intro__emblem only-light" src="assets/img/kora/kora-emblema.png" alt="" width="200" height="200">
+      <img class="intro__emblem only-dark" src="assets/img/kora/kora-emblema-claro.png" alt="" width="200" height="200">
+    </div>
+    <p class="intro__name"><span>K</span><span>O</span><span>R</span><span>A</span></p>
+    <p class="intro__sub" data-en="Academic Management Platform">Plataforma de Gestión Académica</p>
+    <div class="intro__panels"><span></span><span></span><span></span></div>
+  </div>
+
+  <!-- ===================== NAVEGACIÓN ===================== -->
+  <header class="knav" data-nav>
+    <a class="knav__back" href="index.html" data-go="home" aria-label="Volver al portafolio" data-en-aria-label="Back to portfolio"><span aria-hidden="true">←</span><span class="knav__back-text" data-en="Portfolio">Portafolio</span></a>
+    <a class="knav__brand" href="#top" aria-label="Kora, ir arriba" data-en-aria-label="Kora, back to top">
+      <img class="only-light" src="assets/img/kora/kora-emblema.png" alt="" width="36" height="36">
+      <img class="only-dark" src="assets/img/kora/kora-emblema-claro.png" alt="" width="36" height="36">
+      <span>KORA</span>
+    </a>
+    <nav class="knav__links" aria-label="Secciones" data-en-aria-label="Sections">
+      <a href="#que-es" data-en="What it is">Qué es</a>
+      <a href="#para-quien" data-en="Who it's for">Para quién</a>
+      <a href="#asi-se-vera" data-en="Preview">Así se verá</a>
+      <a href="#lanzamiento" data-en="Launch">Lanzamiento</a>
+    </nav>
+    <div class="prefs" role="group" aria-label="Idioma y tema" data-en-aria-label="Language and theme">
+      <button type="button" class="prefs__btn" data-lang-toggle aria-label="View in English"><span data-lang-label>EN</span></button>
+      <button type="button" class="prefs__btn" data-theme-toggle aria-label="Cambiar de tema">
+        <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+        <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+    </div>
+    <a class="knav__switch" href="talento-caribe.html" data-go="tc"><span data-en="See Talento Caribe">Ver Talento Caribe</span> <span aria-hidden="true">→</span></a>
+  </header>
+
+  <main id="contenido">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="top" aria-labelledby="k-title">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="wrap hero__grid">
+        <div class="hero__text">
+          <div class="hero__badges" data-reveal>
+            <span class="kbadge kbadge--plan"><span class="kbadge__dot"></span><span data-en="In planning">En planeación</span></span>
+            <span class="kbadge" data-en="Launch: first quarter of 2027">Lanzamiento: primer trimestre de 2027</span>
+          </div>
+          <h1 class="hero__title" id="k-title" data-reveal style="--d:.08s" data-en="School life, <span class=&quot;grad&quot;>clear for everyone.</span>">La vida académica del colegio, <span class="grad">clara para todos.</span></h1>
+          <p class="hero__lead" data-reveal style="--d:.16s" data-en="<strong>Kora</strong> is an academic management web platform for schools in Colombia: grades, report cards, attendance, behavior and communication with families, all in one place.">
+            <strong>Kora</strong> es una plataforma web de gestión académica para colegios de Colombia:
+            notas, boletines, asistencia, convivencia y comunicación con las familias, en un solo lugar.
+          </p>
+          <div class="hero__actions" data-reveal style="--d:.24s">
+            <a class="kbtn kbtn--primary" href="#asi-se-vera" data-en="See what it will look like">Ver cómo se verá</a>
+            <a class="kbtn kbtn--ghost" href="#que-es" data-en="What is Kora?">¿Qué es Kora?</a>
+          </div>
+        </div>
+
+        <!-- Composición: el emblema en órbita con piezas de la plataforma -->
+        <div class="hero__art" data-reveal="zoom" style="--d:.15s" aria-hidden="true">
+          <div class="orbit-art" data-tilt="6">
+            <svg class="orbit-art__ring" viewBox="0 0 400 400"><ellipse cx="200" cy="200" rx="186" ry="108" transform="rotate(-28 200 200)"/><ellipse class="r2" cx="200" cy="200" rx="150" ry="150"/></svg>
+            <img class="orbit-art__emblem only-light" src="assets/img/kora/kora-emblema.png" alt="" width="200" height="200">
+            <img class="orbit-art__emblem only-dark" src="assets/img/kora/kora-emblema-claro.png" alt="" width="200" height="200">
+            <div class="float float--grade">
+              <span class="float__label" data-en="Math · 9th A">Matemáticas · 9°A</span>
+              <span class="float__big">4,3</span>
+              <span class="perf perf--alto" data-en="High">Alto</span>
+            </div>
+            <div class="float float--notice">
+              <span class="float__icon">✉</span>
+              <span><b data-en="New notice">Nuevo aviso</b><small data-en="Parents' meeting · Friday">Reunión de acudientes · viernes</small></span>
+            </div>
+            <div class="float float--att">
+              <span class="att att--p">P</span><span class="att att--p">P</span><span class="att att--t">T</span><span class="att att--p">P</span><span class="att att--a">A</span>
+              <small data-en="Today's attendance">Asistencia de hoy</small>
+            </div>
+            <div class="float float--inst"><span class="inst-dot"></span><span data-en="Institution 1">Institución 1</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== QUÉ ES ===================== -->
+    <section class="section what" id="que-es" aria-labelledby="what-title">
+      <div class="wrap what__grid">
+        <div>
+          <p class="keyebrow" data-reveal data-en="What it is">Qué es</p>
+          <h2 class="ktitle" id="what-title" data-reveal style="--d:.05s" data-en="Everything academic, in one place.">Todo lo académico, en un solo lugar.</h2>
+          <p class="klead" data-reveal style="--d:.1s" data-en="In many schools, grades live in spreadsheets, report cards are put together by hand and parents find out how their kid is doing when the term is already over. <strong>Kora</strong> brings all of that into a single platform, designed for the way grading works in Colombia.">
+            En muchos colegios las notas viven en hojas de cálculo, los boletines se arman a mano y los acudientes
+            se enteran de cómo va su hijo cuando el periodo ya terminó. <strong>Kora</strong> reúne todo eso en una
+            sola plataforma, pensada para la forma en que se evalúa en Colombia.
+          </p>
+          <p class="klead" data-reveal style="--d:.14s" data-en="It works with <strong>many institutions at once</strong>: each with its own data, kept separate and protected.">
+            Funciona con <strong>varias instituciones a la vez</strong>: cada una con sus propios datos,
+            separados y protegidos.
+          </p>
+        </div>
+
+        <div class="compare" data-reveal="zoom" style="--d:.1s" data-compare>
+          <div class="compare__switch" role="tablist" aria-label="Comparar" data-en-aria-label="Compare">
+            <button type="button" role="tab" aria-selected="false" data-side="antes" data-en="Today, without Kora">Hoy, sin Kora</button>
+            <button type="button" role="tab" aria-selected="true" class="is-on" data-side="kora" data-en="With Kora">Con Kora</button>
+            <span class="compare__pill" aria-hidden="true"></span>
+          </div>
+          <ul class="compare__list" data-list="antes" hidden>
+            <li><span class="x">✕</span><span data-en="Grades scattered across spreadsheets and notebooks">Notas regadas en hojas de cálculo y cuadernos</span></li>
+            <li><span class="x">✕</span><span data-en="Report cards made by hand at the end of each term">Boletines armados a mano al final de cada periodo</span></li>
+            <li><span class="x">✕</span><span data-en="Families find out about low grades too late">Las familias se enteran tarde de las notas bajas</span></li>
+            <li><span class="x">✕</span><span data-en="Notices that get lost in group chats">Avisos que se pierden en grupos de mensajes</span></li>
+            <li><span class="x">✕</span><span data-en="Attendance on paper, hard to look up">Asistencia en papel, difícil de consultar</span></li>
+          </ul>
+          <ul class="compare__list" data-list="kora">
+            <li><span class="ok">✓</span><span data-en="Grade sheets that calculate the final grade on their own">Planillas que calculan la definitiva solas</span></li>
+            <li><span class="ok">✓</span><span data-en="Report cards ready on screen and as PDF">Boletines listos en pantalla y en PDF</span></li>
+            <li><span class="ok">✓</span><span data-en="Mid-term early warning report">Corte preventivo a mitad de periodo</span></li>
+            <li><span class="ok">✓</span><span data-en="Notices with read receipts">Avisos con acuse de lectura</span></li>
+            <li><span class="ok">✓</span><span data-en="Daily attendance that adds up absences automatically">Asistencia diaria que suma las fallas sola</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PARA QUÉ ===================== -->
+    <section class="section features" aria-labelledby="feat-title">
+      <div class="wrap">
+        <p class="keyebrow" data-reveal data-en="What it's for">Para qué sirve</p>
+        <h2 class="ktitle" id="feat-title" data-reveal style="--d:.05s" data-en="What every school will be able to do.">Lo que podrá hacer cada colegio.</h2>
+        <div class="feat-grid">
+          <article class="feat" data-reveal><span class="feat__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 4v16"/></svg></span><h3 data-en="Grade sheets">Planillas de notas</h3><p data-en="Activities with their weight and the final grade calculated on the server, with no rounding errors.">Actividades con su porcentaje y la definitiva calculada en el servidor, sin errores de redondeo.</p></article>
+          <article class="feat" data-reveal style="--d:.05s"><span class="feat__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h7M9 17h5"/></svg></span><h3 data-en="Report cards">Boletines</h3><p data-en="Published when the term closes, on screen and as a printable PDF.">Se publican al cerrar el periodo, en pantalla y en PDF para imprimir.</p></article>
+          <article class="feat" data-reveal style="--d:.1s"><span class="feat__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17v.5"/></svg></span><h3 data-en="Early warning">Corte preventivo</h3><p data-en="Halfway through the term, a snapshot of grades to act in time with students at risk.">A mitad de periodo, una foto de las notas para actuar a tiempo con quien va en riesgo.</p></article>
+          <article class="feat" data-reveal style="--d:.15s"><span class="feat__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M8 15l2 2 4-4"/></svg></span><h3 data-en="Daily attendance">Asistencia diaria</h3><p data-en="Teachers take roll in every class and absences add up on their own.">El docente pasa lista en cada clase y las fallas se suman solas.</p></article>
+          <article class="feat" data-reveal><span class="feat__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg></span><h3 data-en="Behavior">Convivencia</h3><p data-en="A behavior grade per term and each student's record.">Nota de convivencia por periodo y observador del estudiante.</p></article>
+          <article class="feat" data-reveal style="--d:.05s"><span class="feat__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4z"/></svg></span><h3 data-en="Notices and announcements">Avisos y comunicados</h3><p data-en="For the whole school, a grade or a class, knowing who has already read them.">Para todo el colegio, un grado o un curso, sabiendo quién ya los leyó.</p></article>
+          <article class="feat" data-reveal style="--d:.1s"><span class="feat__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 21V9l6-4v16M9 21V5l6 3v13M15 21V8l6 3v10M3 21h18"/></svg></span><h3 data-en="Multiple institutions">Varias instituciones</h3><p data-en="One platform for many schools, each with its data kept apart.">Una sola plataforma para muchos colegios, cada uno con sus datos aparte.</p></article>
+          <article class="feat" data-reveal style="--d:.15s"><span class="feat__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span><h3 data-en="Protected data">Datos protegidos</h3><p data-en="Designed for minors: data consent and role-based permissions.">Pensada para menores de edad: autorización de datos y permisos por rol.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PARA QUIÉN ===================== -->
+    <section class="section who" id="para-quien" aria-labelledby="who-title">
+      <div class="wrap">
+        <p class="keyebrow" data-reveal data-en="Who it's for">Para quién</p>
+        <h2 class="ktitle" id="who-title" data-reveal style="--d:.05s" data-en="Everyone at school sees what they need.">Cada persona del colegio ve lo que necesita.</h2>
+        <div class="roles" data-roles data-reveal style="--d:.1s">
+          <div class="roles__tabs" role="tablist" aria-label="Perfiles" data-en-aria-label="Profiles">
+            <button type="button" role="tab" class="is-on" aria-selected="true" data-role="0" data-en="Coordination">Coordinación</button>
+            <button type="button" role="tab" aria-selected="false" data-role="1" data-en="Principal">Rectoría</button>
+            <button type="button" role="tab" aria-selected="false" data-role="2" data-en="Teachers">Docentes</button>
+            <button type="button" role="tab" aria-selected="false" data-role="3" data-en="Admin office">Secretaría</button>
+            <button type="button" role="tab" aria-selected="false" data-role="4" data-en="Students">Estudiantes</button>
+            <button type="button" role="tab" aria-selected="false" data-role="5" data-en="Parents">Acudientes</button>
+          </div>
+          <div class="roles__panel" role="tabpanel" aria-live="polite">
+            <article class="role is-on" data-panel="0"><h3 data-en="Coordination">Coordinación</h3><p data-en="Has the full academic view.">Tiene la vista completa de lo académico.</p><ul><li data-en="Every grade sheet in the school">Todas las planillas del colegio</li><li data-en="Opens and closes terms">Abre y cierra los periodos</li><li data-en="Runs the early warning report">Genera el corte preventivo</li><li data-en="Publishes notices and announcements">Publica avisos y comunicados</li></ul></article>
+            <article class="role" data-panel="1" hidden><h3 data-en="Principal">Rectoría</h3><p data-en="Follows the school's performance.">Sigue el rendimiento de la institución.</p><ul><li data-en="School and class averages">Promedios del colegio y de cada curso</li><li data-en="Student record entries">Anotaciones del observador</li><li data-en="View only: can't edit grades">Solo consulta: no edita notas</li></ul></article>
+            <article class="role" data-panel="2" hidden><h3 data-en="Teachers">Docentes</h3><p data-en="Work only with their own classes.">Trabajan solo con sus cursos.</p><ul><li data-en="Grade sheets for their subjects">Planillas de sus asignaturas</li><li data-en="Weighted activities">Actividades con porcentajes</li><li data-en="Attendance for each class">Asistencia de cada clase</li><li data-en="Make-up grades with a cap">Recuperaciones con tope de nota</li></ul></article>
+            <article class="role" data-panel="3" hidden><h3 data-en="Admin office">Secretaría</h3><p data-en="Keeps the institution organized.">Organiza la institución.</p><ul><li data-en="Enrollment, grades and groups">Matrículas, grados y grupos</li><li data-en="School years and accounts">Años lectivos y cuentas</li><li data-en="Data consent at enrollment">Autorización de datos al matricular</li><li data-en="Can't see grades">No ve las notas</li></ul></article>
+            <article class="role" data-panel="4" hidden><h3 data-en="Students">Estudiantes</h3><p data-en="See their own progress.">Ven su propio avance.</p><ul><li data-en="Grades by activity and by term">Notas por actividad y por periodo</li><li data-en="Report card and early warning">Boletín e informe preventivo</li><li data-en="Attendance and behavior">Asistencia y convivencia</li><li data-en="School notices">Avisos del colegio</li></ul></article>
+            <article class="role" data-panel="5" hidden><h3 data-en="Parents">Acudientes</h3><p data-en="Support their kids in time.">Acompañan a sus hijos a tiempo.</p><ul><li data-en="One card per child">Una tarjeta por cada hijo</li><li data-en="Average and failing subjects">Promedio y asignaturas en bajo</li><li data-en="Absences and behavior grade">Fallas y nota de convivencia</li><li data-en="Unread notices">Avisos sin leer</li></ul></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ASÍ SE VERÁ ===================== -->
+    <section class="section preview" id="asi-se-vera" aria-labelledby="prev-title">
+      <div class="wrap">
+        <p class="keyebrow" data-reveal data-en="Preview">Así se verá</p>
+        <h2 class="ktitle" id="prev-title" data-reveal style="--d:.05s" data-en="A look at Kora.">Un vistazo a Kora.</h2>
+        <p class="klead" data-reveal style="--d:.1s" data-en="Preview screens with sample data. The platform will be in Spanish, and the final design may change.">Pantallas de vista previa con datos de ejemplo. El diseño final puede cambiar.</p>
+
+        <div class="shots" data-shots data-reveal style="--d:.12s">
+          <div class="shots__tabs" role="tablist" aria-label="Pantallas de Kora" data-en-aria-label="Kora screens">
+            <button type="button" role="tab" class="is-on" aria-selected="true" data-shot="0"><span>01</span><b data-en="Sign in">Ingreso</b></button>
+            <button type="button" role="tab" aria-selected="false" data-shot="1"><span>02</span><b data-en="Teacher's grade sheet">Planilla del docente</b></button>
+            <button type="button" role="tab" aria-selected="false" data-shot="2"><span>03</span><b data-en="Parent dashboard">Panel del acudiente</b></button>
+            <button type="button" role="tab" aria-selected="false" data-shot="3"><span>04</span><b data-en="Report card">Boletín</b></button>
+            <button type="button" role="tab" aria-selected="false" data-shot="4"><span>05</span><b data-en="Coordination">Coordinación</b></button>
+          </div>
+
+          <!-- Las maquetas se ven siempre como la plataforma real (clara) -->
+          <div class="browser keep-light">
+            <div class="browser__bar" aria-hidden="true"><span></span><span></span><span></span><em data-shot-url>kora.app/ingreso</em></div>
+            <div class="browser__screen">
+
+              <!-- 01 · Ingreso -->
+              <div class="shot shot--login is-on" data-screen="0" data-url="kora.app/ingreso" role="img" aria-label="Pantalla de ingreso: elegir institución, perfil y escribir documento y contraseña" data-en-aria-label="Sign-in screen: pick an institution, a profile, and enter ID and password">
+                <div class="login__side">
+                  <img src="assets/img/kora/kora-emblema-claro.png" alt="" width="90" height="90">
+                  <p class="login__brand">KORA</p>
+                  <p class="login__tag">Plataforma de Gestión Académica</p>
+                  <p class="login__quote">Tus notas, tu asistencia y los avisos del colegio, siempre a la mano.</p>
+                </div>
+                <div class="login__form">
+                  <p class="m-h">Ingresar</p>
+                  <p class="m-label">1. Elige tu institución</p>
+                  <div class="m-search">⌕ <span>Buscar por nombre, municipio o código</span></div>
+                  <div class="inst-list">
+                    <div class="inst is-picked"><span class="inst__logo">I1</span><span><b>Institución 1</b><small>Código DANE ••• 001</small></span><i>✓</i></div>
+                    <div class="inst"><span class="inst__logo">I2</span><span><b>Institución 2</b><small>Código DANE ••• 002</small></span></div>
+                    <div class="inst"><span class="inst__logo">I3</span><span><b>Institución 3</b><small>Código DANE ••• 003</small></span></div>
+                  </div>
+                  <p class="m-label">2. Perfil</p>
+                  <div class="chips"><span>Estudiante</span><span class="is-on">Acudiente</span><span>Docente</span><span>Coordinador</span><span>Rector</span></div>
+                  <div class="m-input">Documento <span>1.045.••• •••</span></div>
+                  <div class="m-input">Contraseña <span>••••••••</span></div>
+                  <div class="m-btn">Ingresar a Institución 1</div>
+                </div>
+              </div>
+
+              <!-- 02 · Planilla -->
+              <div class="shot shot--sheet" data-screen="1" data-url="kora.app/docente/planilla" hidden role="img" aria-label="Planilla de notas de Matemáticas de 9°A con actividades y definitiva calculada" data-en-aria-label="Math grade sheet for 9th A with activities and the final grade calculated">
+                <div class="app">
+                  <aside class="app__side"><img src="assets/img/kora/kora-emblema-claro.png" alt="" width="34" height="34"><span class="is-on">▦</span><span>✓</span><span>✉</span><span>☰</span></aside>
+                  <div class="app__main">
+                    <div class="app__top"><div><small>Institución 1 · Periodo 2</small><p class="m-h">Matemáticas · 9°A</p></div><span class="m-tag">Periodo abierto</span></div>
+                    <table class="sheet" data-sheet>
+                      <thead><tr><th>Estudiante</th><th>Quiz<small>30 %</small></th><th>Taller<small>30 %</small></th><th>Evaluación<small>40 %</small></th><th>Definitiva</th><th>Desempeño</th></tr></thead>
+                      <tbody>
+                        <tr data-g="4.5 4.8 4.2"><td>Acosta, Laura</td></tr>
+                        <tr data-g="3.8 4.0 3.5"><td>Barrios, Samuel</td></tr>
+                        <tr data-g="4.9 5.0 4.7"><td>Cantillo, Valentina</td></tr>
+                        <tr data-g="2.5 3.0 2.6"><td>De la Hoz, Andrés</td></tr>
+                        <tr data-g="4.0 4.3 4.1"><td>Escorcia, Mariana</td></tr>
+                        <tr data-g="3.2 2.8 3.4"><td>Fontalvo, Daniel</td></tr>
+                        <tr data-g="4.6 4.4 4.8"><td>Gutiérrez, Sofía</td></tr>
+                      </tbody>
+                    </table>
+                    <p class="sheet__note">La definitiva se calcula sola: 30 % + 30 % + 40 %.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 03 · Acudiente (en celular) -->
+              <div class="shot shot--parent" data-screen="2" data-url="kora.app/portal/resumen" hidden role="img" aria-label="Panel del acudiente en el celular con el promedio de su hijo, alertas y avisos" data-en-aria-label="Parent dashboard on a phone with their child's average, alerts and notices">
+                <div class="phone">
+                  <div class="phone__notch"></div>
+                  <div class="phone__screen">
+                    <p class="ph-hi">Hola 👋<br><b>Resumen de tus hijos</b></p>
+                    <div class="kid">
+                      <div class="kid__top"><span class="kid__av">LA</span><span><b>Laura A.</b><small>9°A · Institución 1</small></span></div>
+                      <div class="kid__avg"><span>Promedio periodo 2</span><b>4,4</b><em class="up">▲ 0,2</em></div>
+                      <div class="kid__row"><span>Asignaturas en bajo</span><b class="okc">0</b></div>
+                      <div class="kid__row"><span>Convivencia</span><b class="perf perf--sup">Superior</b></div>
+                      <div class="kid__row"><span>Fallas del año</span><b>3</b></div>
+                    </div>
+                    <div class="kid kid--warn">
+                      <div class="kid__top"><span class="kid__av kid__av--b">SA</span><span><b>Samuel A.</b><small>6°B · Institución 1</small></span></div>
+                      <div class="kid__avg"><span>Promedio periodo 2</span><b>3,6</b><em class="down">▼ 0,3</em></div>
+                      <div class="kid__row"><span>Asignaturas en bajo</span><b class="badc">2</b></div>
+                    </div>
+                    <div class="ph-notice"><b>Aviso sin leer</b>Reunión de acudientes el viernes 7:00 a. m.</div>
+                  </div>
+                </div>
+                <div class="parent__aside">
+                  <p class="m-h" data-en="Families, always up to date">Las familias, al día</p>
+                  <p data-en="From their phone, parents see how each child is doing: average, trend, failing subjects, behavior, absences and notices.">El acudiente ve, desde el celular, cómo va cada hijo: promedio, tendencia, asignaturas en bajo, convivencia, fallas y avisos.</p>
+                  <p data-en="So they can act in time, not at the end of the term.">Así se puede actuar a tiempo, no al final del periodo.</p>
+                </div>
+              </div>
+
+              <!-- 04 · Boletín -->
+              <div class="shot shot--report" data-screen="3" data-url="kora.app/boletin/periodo-2" hidden role="img" aria-label="Boletín académico del periodo 2 con notas por asignatura y desempeño" data-en-aria-label="Term 2 report card with grades by subject and performance level">
+                <div class="paper">
+                  <div class="paper__head">
+                    <span class="paper__crest">I1</span>
+                    <div><b>Institución 1</b><small>Boletín académico · Periodo 2</small></div>
+                    <img src="assets/img/kora/kora-logo.png" alt="" width="100" height="30">
+                  </div>
+                  <div class="paper__who"><span><small>Estudiante</small>Laura Acosta</span><span><small>Curso</small>9°A</span><span><small>Puesto</small>4 de 38</span></div>
+                  <table class="report">
+                    <thead><tr><th>Asignatura</th><th>P1</th><th>P2</th><th>Fallas</th><th>Desempeño</th></tr></thead>
+                    <tbody>
+                      <tr><td>Matemáticas</td><td>4,2</td><td>4,5</td><td>1</td><td><span class="perf perf--alto">Alto</span></td></tr>
+                      <tr><td>Lengua castellana</td><td>4,6</td><td>4,7</td><td>0</td><td><span class="perf perf--sup">Superior</span></td></tr>
+                      <tr><td>Ciencias naturales</td><td>3,9</td><td>4,1</td><td>2</td><td><span class="perf perf--alto">Alto</span></td></tr>
+                      <tr><td>Ciencias sociales</td><td>4,4</td><td>4,3</td><td>0</td><td><span class="perf perf--alto">Alto</span></td></tr>
+                      <tr><td>Inglés</td><td>3,4</td><td>3,8</td><td>0</td><td><span class="perf perf--bas">Básico</span></td></tr>
+                      <tr><td>Tecnología e informática</td><td>4,8</td><td>5,0</td><td>0</td><td><span class="perf perf--sup">Superior</span></td></tr>
+                      <tr><td>Convivencia</td><td>4,7</td><td>4,8</td><td>–</td><td><span class="perf perf--sup">Superior</span></td></tr>
+                    </tbody>
+                  </table>
+                  <div class="paper__foot"><span>Escala: Superior 4,6–5,0 · Alto 4,0–4,5 · Básico 3,0–3,9 · Bajo 1,0–2,9</span><span class="m-btn m-btn--sm">Descargar PDF</span></div>
+                </div>
+              </div>
+
+              <!-- 05 · Coordinación -->
+              <div class="shot shot--dash" data-screen="4" data-url="kora.app/coordinacion" hidden role="img" aria-label="Panel de coordinación con cifras del periodo y estudiantes en riesgo por grado" data-en-aria-label="Coordination dashboard with term figures and students at risk by grade">
+                <div class="app">
+                  <aside class="app__side"><img src="assets/img/kora/kora-emblema-claro.png" alt="" width="34" height="34"><span>▦</span><span class="is-on">◔</span><span>✉</span><span>☰</span></aside>
+                  <div class="app__main">
+                    <div class="app__top"><div><small>Institución 1</small><p class="m-h">Coordinación · Periodo 2</p></div><span class="m-tag m-tag--warn">Corte preventivo listo</span></div>
+                    <div class="tiles">
+                      <div class="tile"><small>Estudiantes</small><b>1.248</b></div>
+                      <div class="tile"><small>Docentes</small><b>42</b></div>
+                      <div class="tile"><small>Planillas completas</small><b>86 %</b><span class="tile__bar"><i style="width:86%"></i></span></div>
+                      <div class="tile"><small>Avisos leídos</small><b>73 %</b><span class="tile__bar"><i style="width:73%"></i></span></div>
+                    </div>
+                    <div class="chart">
+                      <p class="chart__title">Estudiantes en riesgo por grado <small>(corte preventivo)</small></p>
+                      <div class="chart__bars">
+                        <div style="--v:.35"><i></i><span>6°</span></div>
+                        <div style="--v:.52"><i></i><span>7°</span></div>
+                        <div style="--v:.78"><i></i><span>8°</span></div>
+                        <div style="--v:.64"><i></i><span>9°</span></div>
+                        <div style="--v:.41"><i></i><span>10°</span></div>
+                        <div style="--v:.22"><i></i><span>11°</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <p class="shots__caption" data-shot-caption>Elige tu institución, tu perfil y entra con tu documento.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== LANZAMIENTO ===================== -->
+    <section class="section launch" id="lanzamiento" aria-labelledby="launch-title">
+      <div class="wrap">
+        <p class="keyebrow keyebrow--light" data-reveal data-en="Launch">Lanzamiento</p>
+        <h2 class="ktitle ktitle--light" id="launch-title" data-reveal style="--d:.05s" data-en="Kora is still in planning.">Kora todavía está en planeación.</h2>
+        <p class="klead klead--light" data-reveal style="--d:.1s" data-en="I'm designing every part carefully so it works well from day one. I hope to launch it in the <strong>first quarter of 2027</strong>.">
+          Estoy diseñando cada parte con calma para que funcione bien desde el primer día.
+          Espero lanzarlo en el <strong>primer trimestre de 2027</strong>.
+        </p>
+
+        <div class="countdown" data-countdown data-reveal style="--d:.15s">
+          <div><b data-cd="days">00</b><span data-en="days">días</span></div>
+          <div><b data-cd="hours">00</b><span data-en="hours">horas</span></div>
+          <div><b data-cd="mins">00</b><span data-en="minutes">minutos</span></div>
+          <div><b data-cd="secs">00</b><span data-en="seconds">segundos</span></div>
+          <p data-cd-label data-en="until the first quarter of 2027 begins">para que empiece el primer trimestre de 2027</p>
+        </div>
+
+        <ol class="road" data-reveal style="--d:.2s">
+          <li class="road__step is-now"><span class="road__dot ping"></span><b data-en="Planning">Planeación</b><small data-en="Today">Hoy</small></li>
+          <li class="road__step"><span class="road__dot"></span><b data-en="Design and development">Diseño y desarrollo</b><small data-en="Building each module">Construir cada módulo</small></li>
+          <li class="road__step"><span class="road__dot"></span><b data-en="Testing">Pruebas</b><small data-en="With the first institutions">Con las primeras instituciones</small></li>
+          <li class="road__step road__step--goal"><span class="road__dot"></span><b data-en="Launch">Lanzamiento</b><small data-en="First quarter of 2027">Primer trimestre de 2027</small></li>
+        </ol>
+
+        <div class="launch__cta" data-reveal>
+          <p data-en="Would you like your institution to be among the first to use Kora?">¿Te gustaría que tu institución esté entre las primeras en usar Kora?</p>
+          <a class="kbtn kbtn--white" href="index.html#contacto" data-go="home" data-en="Write to me">Escríbeme</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="kfooter">
+    <div class="wrap kfooter__inner">
+      <div class="kfooter__brand">
+        <img src="assets/img/kora/kora-emblema-claro.png" alt="" width="52" height="52">
+        <p><b>KORA</b> · <span data-en="Academic Management Platform">Plataforma de Gestión Académica</span><br><small data-en="A project by Jose Rodríguez, Barranquilla. © <span data-year>2026</span>">Un proyecto de Jose Rodríguez, Barranquilla. © <span data-year>2026</span></small></p>
+      </div>
+      <nav class="kfooter__nav" aria-label="Otras páginas" data-en-aria-label="Other pages">
+        <a href="index.html" data-go="home" data-en="← Back to portfolio">← Volver al portafolio</a>
+        <a href="talento-caribe.html" data-go="tc" data-en="See my other project: Talento Caribe →">Ver el otro proyecto: Talento Caribe →</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

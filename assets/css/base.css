@@ -1,0 +1,98 @@
+/* =========================================================
+   base.css
+   Lo común a las tres páginas: reinicio de estilos, aparición
+   al hacer scroll, transición entre páginas y utilidades.
+   Cada página tiene además su propia hoja con su identidad:
+   inicio.css, talento-caribe.css y kora.css.
+   ========================================================= */
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; scroll-behavior: auto; }
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-stopped { overflow: hidden; }
+body { margin: 0; min-height: 100vh; overflow-x: hidden; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+img, svg { display: block; max-width: 100%; }
+[hidden] { display: none !important; }
+h1, h2, h3, h4, p, ul, ol, dl, dd, figure { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+a { color: inherit; }
+button { font: inherit; color: inherit; cursor: pointer; }
+:focus-visible { outline: 3px solid var(--focus, #3fd8f6); outline-offset: 3px; border-radius: 6px; }
+::selection { background: var(--selection, rgba(63, 216, 246, .35)); }
+
+.wrap { width: min(100% - 2 * var(--gutter, 20px), var(--max, 1180px)); margin-inline: auto; }
+.sr-only { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.skip { position: fixed; left: 12px; top: -60px; z-index: 300; padding: 10px 16px; border-radius: 10px; background: #fff; color: #000; font-weight: 700; text-decoration: none; transition: top .2s; }
+.skip:focus { top: 12px; }
+
+/* ---------- Aparecer al hacer scroll ---------- */
+[data-reveal] {
+  opacity: 0;
+  transform: translate3d(0, 26px, 0);
+  transition: opacity .8s cubic-bezier(.16, 1, .3, 1) var(--d, 0s), transform .9s cubic-bezier(.16, 1, .3, 1) var(--d, 0s);
+}
+[data-reveal="left"] { transform: translate3d(-34px, 0, 0); }
+[data-reveal="right"] { transform: translate3d(34px, 0, 0); }
+[data-reveal="zoom"] { transform: scale(.94); }
+[data-reveal].is-in { opacity: 1; transform: none; }
+
+/* ---------- Transición al cambiar de página ---------- */
+.wipe {
+  position: fixed; inset: 0; z-index: 500;
+  clip-path: circle(0px at var(--x, 50%) var(--y, 50%));
+  transition: clip-path .72s cubic-bezier(.7, 0, .25, 1);
+  display: grid; place-items: center;
+  pointer-events: all;
+}
+.wipe.is-on { clip-path: circle(150vmax at var(--x, 50%) var(--y, 50%)); }
+.wipe__mark { width: 120px; height: 120px; opacity: 0; transform: scale(.8); transition: opacity .3s .38s, transform .5s .38s cubic-bezier(.16, 1, .3, 1); background: center / contain no-repeat; }
+.wipe.is-on .wipe__mark { opacity: 1; transform: none; }
+.wipe--tc .wipe__mark { background-image: url("../img/talento-caribe/logo-emblema-hd-color.png"); width: 150px; }
+.wipe--kora .wipe__mark { background-image: url("../img/kora/kora-emblema.png"); }
+.wipe--home .wipe__mark { background-image: url("../img/logo/jr-logo-fondo-oscuro.svg"); width: 90px; }
+[data-theme="light"] .wipe--home .wipe__mark { background-image: url("../img/logo/jr-logo.svg"); }
+[data-theme="dark"] .wipe--kora .wipe__mark { background-image: url("../img/kora/kora-emblema-claro.png"); }
+
+.arrive { position: fixed; inset: 0; z-index: 400; pointer-events: none; transition: opacity .6s ease; }
+.arrive.is-off { opacity: 0; }
+
+/* ---------- Idioma: oculta el texto un instante mientras se traduce ---------- */
+.i18n-wait body { visibility: hidden; }
+
+/* ---------- Imágenes según el tema ---------- */
+[data-theme="light"] .only-dark, [data-theme="dark"] .only-light { display: none !important; }
+
+/* ---------- Cambio de tema: círculo que se expande (View Transitions) ---------- */
+::view-transition-old(root), ::view-transition-new(root) { animation: none; mix-blend-mode: normal; }
+::view-transition-new(root) { z-index: 9999; }
+
+/* ---------- Botones de idioma y tema (en la barra) ---------- */
+.prefs { display: inline-flex; align-items: center; gap: 6px; }
+.prefs__btn {
+  display: inline-grid; place-items: center; min-width: 40px; height: 40px; padding: 0 10px;
+  border-radius: 11px; border: 1.5px solid var(--prefs-line, rgba(127, 140, 170, .45));
+  background: var(--prefs-bg, transparent); color: var(--prefs-ink, currentColor);
+  font: 700 .82rem/1 var(--prefs-font, inherit); letter-spacing: .06em;
+  transition: border-color .2s, transform .2s;
+}
+.prefs__btn:hover { border-color: var(--prefs-accent, currentColor); transform: translateY(-1px); }
+.prefs__btn svg { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; }
+.prefs__btn .i-sun { display: none; }
+[data-theme="dark"] .prefs__btn .i-sun { display: block; }
+[data-theme="dark"] .prefs__btn .i-moon { display: none; }
+@media (max-width: 400px) { .prefs__btn { min-width: 36px; height: 36px; padding: 0 8px; } }
+
+/* ---------- Más fluidez: lo que no se ve, no se anima ---------- */
+.is-paused, .is-paused *, .is-paused *::before, .is-paused *::after { animation-play-state: paused !important; }
+
+/* ---------- Pulso de los puntitos "en vivo" (solo transform y opacity) ---------- */
+.ping { position: relative; }
+.ping::after { content: ""; position: absolute; inset: 0; border-radius: 50%; background: var(--ping, currentColor); animation: ping-ring 2s cubic-bezier(.16, 1, .3, 1) infinite; pointer-events: none; }
+@keyframes ping-ring { 0% { transform: scale(1); opacity: .65; } 80%, 100% { transform: scale(2.6); opacity: 0; } }
+
+/* ---------- Movimiento reducido ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
+  [data-reveal] { opacity: 1; transform: none; }
+}

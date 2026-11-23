@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="es" class="intro-on">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-en="Talento Caribe | Jose Rodríguez">Talento Caribe | Jose Rodríguez</title>
+  <meta name="description" content="Talento Caribe: plataforma educativa gratuita e híbrida de software y hardware para jóvenes. Arranca en Barranquilla con un piloto en el primer semestre de 2027. Súmate desde el principio.">
+  <meta name="theme-color" content="#0a1730">
+  <meta name="color-scheme" content="dark light">
+  <meta property="og:title" content="Talento Caribe | Tu talento no tiene fronteras">
+  <meta property="og:description" content="Educación tecnológica gratuita para jóvenes. Piloto en Barranquilla, primer semestre de 2027. Súmate.">
+  <link rel="icon" href="assets/img/talento-caribe/favicon.png" type="image/png">
+  <script src="assets/js/prefs.js"></script>
+  <script>
+    /* La intro solo se ve una vez por sesión: si ya se vio, se quita antes de pintar */
+    try { if (sessionStorage.getItem("intro-tc") === "1" || matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.remove("intro-on"); } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/talento-caribe.css">
+  <link rel="prefetch" href="kora.html">
+  <link rel="prefetch" href="index.html">
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/vendor/lenis.min.js" defer></script>
+  <script src="assets/js/common.js" defer></script>
+  <script src="assets/js/talento-caribe.js" defer></script>
+</head>
+<body data-page="tc">
+  <a class="skip" href="#contenido" data-en="Skip to content">Saltar al contenido</a>
+
+  <!-- ===================== INTRO: el amanecer sobre el mar ===================== -->
+  <div class="intro" data-intro aria-hidden="true">
+    <div class="intro__sky"></div>
+    <div class="intro__stars"></div>
+    <div class="intro__sun"></div>
+    <div class="intro__horizon"></div>
+    <div class="intro__sea">
+      <svg viewBox="0 0 1200 200" preserveAspectRatio="none"><path class="iw iw--1" d="M0 40 Q75 10 150 40 T300 40 T450 40 T600 40 T750 40 T900 40 T1050 40 T1200 40 T1350 40 T1500 40 V200 H0Z"/><path class="iw iw--2" d="M0 90 Q75 60 150 90 T300 90 T450 90 T600 90 T750 90 T900 90 T1050 90 T1200 90 T1350 90 T1500 90 V200 H0Z"/></svg>
+    </div>
+    <div class="intro__brand">
+      <div class="intro__emblem"></div>
+      <p class="intro__talento"><span>T</span><span>A</span><span>L</span><span>E</span><span>N</span><span>T</span><span>O</span></p>
+      <p class="intro__caribe">CARIBE</p>
+      <span class="intro__bar"><span></span></span>
+    </div>
+  </div>
+
+  <!-- ===================== NAVEGACIÓN ===================== -->
+  <header class="tcnav" data-nav>
+    <a class="tcnav__back" href="index.html" data-go="home" aria-label="Volver al portafolio" data-en-aria-label="Back to portfolio">
+      <span aria-hidden="true">←</span><span class="tcnav__back-text" data-en="Portfolio">Portafolio</span>
+    </a>
+    <a class="tcnav__brand" href="#top" aria-label="Talento Caribe, ir arriba" data-en-aria-label="Talento Caribe, back to top">
+      <img class="only-dark" src="assets/img/talento-caribe/logo-talento-caribe-claro.png" alt="Talento Caribe" width="62" height="53">
+      <img class="only-light" src="assets/img/talento-caribe/logo-talento-caribe.png" alt="Talento Caribe" width="62" height="53">
+    </a>
+    <nav class="tcnav__links" aria-label="Secciones" data-en-aria-label="Sections">
+      <a href="#por-que" data-en="Why">Por qué nace</a>
+      <a href="#para-quien" data-en="Who it's for">Para quién</a>
+      <a href="#como" data-en="How it works">Cómo funciona</a>
+      <a href="#futuro" data-en="What's next">Hacia dónde va</a>
+      <a href="#sumate" class="tcnav__join" data-en="Join us">Súmate</a>
+    </nav>
+    <div class="prefs" role="group" aria-label="Idioma y tema" data-en-aria-label="Language and theme">
+      <button type="button" class="prefs__btn" data-lang-toggle aria-label="View in English"><span data-lang-label>EN</span></button>
+      <button type="button" class="prefs__btn" data-theme-toggle aria-label="Cambiar de tema">
+        <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+        <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+    </div>
+    <a class="tcnav__switch" href="kora.html" data-go="kora"><span data-en="See Kora">Ver Kora</span> <span aria-hidden="true">→</span></a>
+  </header>
+
+  <main id="contenido">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="top" aria-labelledby="tc-title">
+      <div class="wrap hero__grid">
+        <div class="hero__text">
+          <p class="pill pill--live" data-reveal><span class="pill__dot ping"></span><span data-en="Pilot in Barranquilla · first half of 2027">Piloto en Barranquilla · primer semestre de 2027</span></p>
+          <h1 class="hero__title" id="tc-title" data-reveal style="--d:.08s" data-en="Your talent has no <span class=&quot;sol-text&quot;>borders</span>.">Tu talento no tiene <span class="sol-text">fronteras</span>.</h1>
+          <p class="hero__lead" data-reveal style="--d:.16s" data-en="<strong>Talento Caribe</strong> is a <strong>free</strong>, <strong>hybrid</strong> (in-person and online) learning platform where young people learn <strong>software and hardware</strong>: from their first web page to building a robot.">
+            <strong>Talento Caribe</strong> es una plataforma educativa <strong>gratuita</strong> e <strong>híbrida</strong>
+            (presencial y virtual) donde los jóvenes aprenden <strong>software y hardware</strong>: desde su primera
+            página web hasta armar un robot.
+          </p>
+          <div class="hero__actions" data-reveal style="--d:.24s">
+            <a class="tbtn tbtn--sol" href="#sumate" data-en="I want to join">Quiero sumarme</a>
+            <a class="tbtn tbtn--line" href="#por-que" data-en="Read the story">Conocer la historia</a>
+          </div>
+        </div>
+
+        <!-- Emblema animado: palma, sol con rayos y las dos olas -->
+        <figure class="hero__art" data-reveal="zoom" style="--d:.2s">
+          <div class="emblem" data-tilt="8">
+            <svg viewBox="0 0 260 260" role="img" aria-label="Emblema de Talento Caribe: palma, sol y mar" data-en-aria-label="Talento Caribe emblem: palm tree, sun and sea">
+              <defs>
+                <clipPath id="tc-c"><circle cx="120" cy="150" r="100"/></clipPath>
+                <radialGradient id="tc-glow"><stop offset="0" stop-color="#f7ae1f" stop-opacity=".55"/><stop offset="1" stop-color="#f7ae1f" stop-opacity="0"/></radialGradient>
+              </defs>
+              <circle class="emblem__ring" cx="120" cy="150" r="100"/>
+              <circle class="emblem__glow" cx="120" cy="150" r="110" fill="url(#tc-glow)"/>
+              <g class="emblem__palm" fill="#0e9a7b">
+                <path d="M150 62 C160 25 205 8 240 22 C205 26 180 42 150 62Z"/>
+                <path d="M150 62 C185 45 235 55 252 92 C220 72 190 66 150 62Z"/>
+                <path d="M150 62 C140 30 110 14 82 18 C112 30 132 44 150 62Z"/>
+              </g>
+              <g class="emblem__rays" stroke="#f7ae1f" stroke-width="11" stroke-linecap="round">
+                <path class="ray" d="M114 82 L110 58"/>
+                <path class="ray" d="M160 92 L176 72"/>
+                <path class="ray" d="M184 132 L210 125"/>
+              </g>
+              <g clip-path="url(#tc-c)">
+                <circle class="emblem__sun" cx="120" cy="150" r="54" fill="#f7ae1f"/>
+                <path class="emblem__wave emblem__wave--1" fill="#1fb5e3" d="M-240 158 q30 -15 60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 V270 H-240Z"/>
+                <path class="emblem__wave emblem__wave--2" fill="#1c6fd1" d="M-240 194 q30 -14 60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 V270 H-240Z"/>
+              </g>
+            </svg>
+          </div>
+          <figcaption class="hero__caption" data-en="Made in Barranquilla, by the Caribbean Sea.">Hecho en Barranquilla, frente al mar Caribe.</figcaption>
+        </figure>
+      </div>
+
+      <div class="sea" aria-hidden="true">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path class="sw sw--1" d="M0 50 Q90 20 180 50 T360 50 T540 50 T720 50 T900 50 T1080 50 T1260 50 T1440 50 T1620 50 T1800 50 V120 H0Z"/>
+          <path class="sw sw--2" d="M0 74 Q90 46 180 74 T360 74 T540 74 T720 74 T900 74 T1080 74 T1260 74 T1440 74 T1620 74 T1800 74 V120 H0Z"/>
+          <path class="sw sw--3" d="M0 96 Q90 76 180 96 T360 96 T540 96 T720 96 T900 96 T1080 96 T1260 96 T1440 96 T1620 96 T1800 96 V120 H0Z"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ===================== CIFRAS ===================== -->
+    <section class="numbers keep-dark" aria-label="Talento Caribe en cifras" data-en-aria-label="Talento Caribe in numbers">
+      <div class="wrap numbers__grid">
+        <div class="cifra" data-reveal><strong data-count="12">12</strong><span data-en="planned software and hardware courses">cursos planeados de software y hardware</span></div>
+        <div class="cifra" data-reveal style="--d:.06s"><strong data-count="8">8</strong><span data-en="modules per course">módulos por curso</span></div>
+        <div class="cifra" data-reveal style="--d:.12s"><strong data-count="16">16</strong><span data-en="weeks per course">semanas por curso</span></div>
+        <div class="cifra cifra--sol" data-reveal style="--d:.18s"><strong>$<span data-count="0">0</span></strong><span data-en="Completely free">Totalmente gratis</span></div>
+      </div>
+    </section>
+
+    <!-- ===================== POR QUÉ NACE ===================== -->
+    <section class="section why" id="por-que" aria-labelledby="why-title">
+      <div class="wrap why__grid">
+        <div>
+          <p class="eyebrow" data-reveal data-en="The story">La historia</p>
+          <h2 class="title" id="why-title" data-reveal style="--d:.05s" data-en="Why Talento Caribe?">¿Por qué nace Talento Caribe?</h2>
+          <p class="why__p" data-reveal style="--d:.1s" data-en="Talento Caribe was born in Barranquilla from something I see every day: young people with tons of talent who have never had the chance to learn to code, build a computer or make a robot.">
+            Talento Caribe nace en Barranquilla de algo que veo todos los días: jóvenes con muchísimo talento
+            que nunca han tenido la oportunidad de aprender a programar, de armar un computador o de construir un robot.
+          </p>
+          <p class="why__p" data-reveal style="--d:.14s" data-en="It's not because they can't. It's because courses cost money, are far away or ask for requirements many don't have. That's why I decided to create a platform where learning technology is <strong>free</strong>, <strong>close to home or on your phone</strong>, and designed to start <strong>from zero</strong>.">
+            No es porque no puedan. Es porque los cursos cuestan, quedan lejos o piden requisitos que muchos no tienen.
+            Por eso decidí crear una plataforma donde aprender tecnología sea <strong>gratis</strong>,
+            <strong>cerca de casa o desde el celular</strong>, y pensada para empezar <strong>desde cero</strong>.
+          </p>
+          <blockquote class="why__quote" data-reveal style="--d:.2s" data-en="“Learning technology shouldn't depend on where you live or how much money you have.”">
+            “Aprender tecnología no debería depender de dónde vives ni de cuánto dinero tienes.”
+          </blockquote>
+        </div>
+
+        <div class="barriers">
+          <p class="barriers__label" data-reveal data-en="What gets in the way">Lo que se interpone</p>
+          <div class="barrier" data-reveal style="--d:.05s"><span class="barrier__icon" aria-hidden="true">$</span><span class="barrier__text" data-en="Courses that cost money">Cursos que cuestan dinero</span></div>
+          <div class="barrier" data-reveal style="--d:.12s"><span class="barrier__icon" aria-hidden="true">⌖</span><span class="barrier__text" data-en="Training centers far from home">Centros de formación lejos de casa</span></div>
+          <div class="barrier" data-reveal style="--d:.19s"><span class="barrier__icon" aria-hidden="true">✕</span><span class="barrier__text" data-en="Requirements that are hard to meet">Requisitos difíciles de cumplir</span></div>
+          <div class="answer" data-reveal style="--d:.3s">
+            <img src="assets/img/talento-caribe/logo-emblema-hd-color.png" alt="" width="64" height="48">
+            <p data-en="<strong>Talento Caribe:</strong> free, in-person and online, and made to start knowing nothing."><strong>Talento Caribe:</strong> gratis, presencial y virtual, y para empezar sin saber nada.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PARA QUIÉN ===================== -->
+    <section class="section who" id="para-quien" aria-labelledby="who-title">
+      <div class="wrap">
+        <p class="eyebrow" data-reveal data-en="Who it's for">Para quién</p>
+        <h2 class="title" id="who-title" data-reveal style="--d:.05s" data-en="For every young person eager to learn.">Para todo joven con ganas de aprender.</h2>
+        <p class="lead" data-reveal style="--d:.1s" data-en="No experience, no computer of your own and no money needed. Just the drive.">No necesitas experiencia, computador propio ni pagar nada. Solo ganas.</p>
+        <div class="who__grid">
+          <article class="card card--ola" data-reveal data-tilt="4">
+            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span>
+            <h3 data-en="Curious young people">Jóvenes curiosos</h3>
+            <p data-en="Who want to learn to code, design or build computers, even if they've never done it.">Que quieren aprender a programar, diseñar o armar equipos, aunque nunca lo hayan hecho.</p>
+          </article>
+          <article class="card card--sol" data-reveal style="--d:.06s" data-tilt="4">
+            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 9l9-5 9 5-9 5-9-5z"/><path d="M7 11.5V16c0 1.5 2.5 3 5 3s5-1.5 5-3v-4.5"/></svg></span>
+            <h3 data-en="School students">Estudiantes de colegio</h3>
+            <p data-en="Who want to learn beyond the classroom and discover what they love.">Que buscan aprender algo más allá del salón y descubrir qué les apasiona.</p>
+          </article>
+          <article class="card card--palma" data-reveal style="--d:.12s" data-tilt="4">
+            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            <h3 data-en="People looking for their first opportunity">Quienes buscan su primera oportunidad</h3>
+            <p data-en="Recent graduates who want a real skill to work or start something.">Recién graduados que quieren una habilidad real para trabajar o emprender.</p>
+          </article>
+          <article class="card card--mar" data-reveal style="--d:.18s" data-tilt="4">
+            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></span>
+            <h3 data-en="Teachers and mentors">Docentes y mentores</h3>
+            <p data-en="Who want to teach what they know and guide each student, module by module.">Que quieren enseñar lo que saben y acompañar a cada estudiante, módulo por módulo.</p>
+          </article>
+        </div>
+        <p class="who__note" data-reveal data-en="Minors sign up together with a parent or guardian.">Los menores de edad se inscriben con el acompañamiento de un acudiente.</p>
+      </div>
+    </section>
+
+    <!-- ===================== CURSOS ===================== -->
+    <section class="section courses" id="cursos" aria-labelledby="courses-title">
+      <div class="wrap">
+        <p class="eyebrow" data-reveal data-en="What you'll learn">Lo que se va a aprender</p>
+        <h2 class="title" id="courses-title" data-reveal style="--d:.05s" data-en="A step-by-step path. The first one, in 2027.">Una ruta paso a paso. El primero, en 2027.</h2>
+        <p class="lead" data-reveal style="--d:.08s" data-en="Talento Caribe starts with a path of <strong>four courses</strong> that takes any young person from zero to building their own web app, from what you see on screen to the database. The first one, <strong>Programming logic</strong>, is the pilot for the first half of 2027 in Barranquilla.">
+          Talento Caribe arranca con una ruta de <strong>cuatro cursos</strong> que lleva a cualquier joven desde cero
+          hasta construir su propia aplicación web, de lo que se ve en pantalla a la base de datos.
+          El primero, <strong>Lógica de programación</strong>, es el piloto del primer semestre de 2027 en Barranquilla.
+        </p>
+
+        <ol class="route">
+          <li class="route__step route__step--pilot" data-reveal>
+            <span class="route__n">1</span>
+            <span class="route__tag"><span class="pilot__sun ping"></span><span data-en="Pilot · 1st half 2027">Piloto · 1.er semestre 2027</span></span>
+            <h3 data-en="Programming logic">Lógica de programación</h3>
+            <p data-en="Learn to think like a programmer: algorithms, variables, conditions and loops.">Aprender a pensar como programador: algoritmos, variables, condiciones y ciclos.</p>
+            <a class="tbtn tbtn--sol tbtn--sm" href="#sumate" data-join-preset="estudiar" data-en="I want to be in the pilot">Quiero estar en el piloto</a>
+          </li>
+          <li class="route__step" data-reveal style="--d:.08s">
+            <span class="route__n">2</span>
+            <span class="route__tag" data-en="Next">Después</span>
+            <h3 data-en="HTML and CSS">HTML y CSS</h3>
+            <p data-en="The structure and design of a web page. Your first page, published.">La estructura y el diseño de una página web. Tu primera página, publicada.</p>
+          </li>
+          <li class="route__step" data-reveal style="--d:.16s">
+            <span class="route__n">3</span>
+            <span class="route__tag" data-en="Next">Después</span>
+            <h3>JavaScript</h3>
+            <p data-en="Bring the page to life: interaction, events and logic in the browser.">Darle vida a la página: interacción, eventos y lógica en el navegador.</p>
+          </li>
+          <li class="route__step" data-reveal style="--d:.24s">
+            <span class="route__n">4</span>
+            <span class="route__tag" data-en="Next">Después</span>
+            <h3 data-en="Databases with PostgreSQL">Bases de datos con PostgreSQL</h3>
+            <p data-en="Store and organize real information with SQL, the way real apps do.">Guardar y organizar información real con SQL, como lo hacen las aplicaciones de verdad.</p>
+          </li>
+        </ol>
+        <div class="route__goal" data-reveal style="--d:.3s">
+          <span class="route__goal-sun" aria-hidden="true"></span>
+          <p data-en="<b>The goal:</b> finish the path with a complete web app built by you, from the screen to the database."><b>La meta:</b> terminar la ruta con una aplicación web completa hecha por ti, de la pantalla a la base de datos.</p>
+        </div>
+
+        <h3 class="later__title" data-reveal data-en="Coming later">Lo que viene después</h3>
+        <p class="later__lead" data-reveal data-en="Once the path is running, more software and hardware courses will open.">Cuando la ruta esté andando, se irán abriendo más cursos de software y hardware.</p>
+        <div class="filters" role="tablist" aria-label="Filtrar cursos por área" data-en-aria-label="Filter courses by area" data-reveal style="--d:.1s">
+          <button type="button" role="tab" class="filter is-on" aria-selected="true" data-filter="todos" data-en="All <span>8</span>">Todos <span>8</span></button>
+          <button type="button" role="tab" class="filter" aria-selected="false" data-filter="software">Software <span>3</span></button>
+          <button type="button" role="tab" class="filter" aria-selected="false" data-filter="hardware">Hardware <span>5</span></button>
+        </div>
+        <ul class="course-list" data-courses>
+          <li class="course" data-area="software"><span class="course__area">Software</span><h3 data-en="Python from scratch">Python desde cero</h3><span class="course__meta" data-en="<span>Beginner</span><span>Online</span>"><span>Básico</span><span>Virtual</span></span></li>
+          <li class="course" data-area="software"><span class="course__area">Software</span><h3 data-en="Git and GitHub">Git y GitHub</h3><span class="course__meta" data-en="<span>Beginner</span><span>Online</span>"><span>Básico</span><span>Virtual</span></span></li>
+          <li class="course" data-area="software"><span class="course__area">Software</span><h3 data-en="Intro to AI">Introducción a la IA</h3><span class="course__meta" data-en="<span>Beginner</span><span>Online</span>"><span>Básico</span><span>Virtual</span></span></li>
+          <li class="course" data-area="hardware"><span class="course__area">Hardware</span><h3 data-en="Basic electronics">Electrónica básica</h3><span class="course__meta" data-en="<span>Beginner</span><span>In person</span>"><span>Básico</span><span>Presencial</span></span></li>
+          <li class="course" data-area="hardware"><span class="course__area">Hardware</span><h3 data-en="Arduino from scratch">Arduino desde cero</h3><span class="course__meta" data-en="<span>Beginner</span><span>In person</span>"><span>Básico</span><span>Presencial</span></span></li>
+          <li class="course" data-area="hardware"><span class="course__area">Hardware</span><h3 data-en="Building and maintaining computers">Armado y mantenimiento de computadores</h3><span class="course__meta" data-en="<span>Beginner</span><span>In person</span>"><span>Básico</span><span>Presencial</span></span></li>
+          <li class="course" data-area="hardware"><span class="course__area">Hardware</span><h3 data-en="Basic robotics">Robótica básica</h3><span class="course__meta" data-en="<span>Intermediate</span><span>In person</span>"><span>Intermedio</span><span>Presencial</span></span></li>
+          <li class="course" data-area="hardware"><span class="course__area">Hardware</span><h3 data-en="Internet of Things with ESP32">Internet de las Cosas con ESP32</h3><span class="course__meta" data-en="<span>Intermediate</span><span>Hybrid</span>"><span>Intermedio</span><span>Híbrido</span></span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== CÓMO FUNCIONA ===================== -->
+    <section class="section how keep-dark" id="como" aria-labelledby="how-title">
+      <div class="wrap">
+        <p class="eyebrow" data-reveal data-en="How it works">Cómo funciona</p>
+        <h2 class="title" id="how-title" data-reveal style="--d:.05s" data-en="From sign-up to your first project.">De la inscripción a tu primer proyecto.</h2>
+        <ol class="steps">
+          <li class="step" data-reveal><span class="step__n">01</span><h3 data-en="You start the path">Empiezas la ruta</h3><p data-en="With Programming logic, no prior knowledge needed.">Con Lógica de programación, sin necesidad de saber nada antes.</p></li>
+          <li class="step" data-reveal style="--d:.08s"><span class="step__n">02</span><h3 data-en="You join a group">Entras a una ficha</h3><p data-en="Your group of classmates, with its own number, like group 25896.">Tu grupo de compañeros, con su número, como la ficha 25896.</p></li>
+          <li class="step" data-reveal style="--d:.16s"><span class="step__n">03</span><h3 data-en="You move through modules">Avanzas por módulos</h3><p data-en="8 modules of 2 weeks each: 16 weeks in total.">8 módulos de 2 semanas cada uno: 16 semanas en total.</p></li>
+          <li class="step" data-reveal style="--d:.24s"><span class="step__n">04</span><h3 data-en="You hand in activities">Entregas actividades</h3><p data-en="You upload your work to the platform and see your grades and achievements.">Subes tus evidencias a la plataforma y ves tus notas y logros.</p></li>
+          <li class="step" data-reveal style="--d:.32s"><span class="step__n">05</span><h3 data-en="We've got your back">Te acompañamos</h3><p data-en="Teachers who review your progress and an AI tutor.">Docentes que revisan tu avance y un tutor con inteligencia artificial.</p></li>
+        </ol>
+        <div class="tide" aria-hidden="true"><span class="tide__track"><span class="tide__sun"></span></span></div>
+
+        <div class="offers">
+          <div class="offer" data-reveal><h3 data-en="In person and online">Presencial y virtual</h3><p data-en="Hardware courses happen in person; software ones, from wherever you are.">Los cursos de hardware se viven en persona; los de software, desde donde estés.</p></div>
+          <div class="offer" data-reveal style="--d:.06s"><h3 data-en="Student portal">Portal del estudiante</h3><p data-en="Your courses, activities, achievements and surveys in one place.">Tus cursos, actividades, logros y encuestas en un solo lugar.</p></div>
+          <div class="offer" data-reveal style="--d:.12s"><h3 data-en="AI tutor">Tutor con IA</h3><p data-en="An assistant that knows the platform and answers your questions.">Un asistente que conoce la plataforma y responde tus dudas.</p></div>
+          <div class="offer" data-reveal style="--d:.18s"><h3 data-en="Teacher follow-up">Seguimiento docente</h3><p data-en="Each teacher tracks their group's progress, module by module.">Cada docente revisa el progreso de su ficha, módulo por módulo.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HACIA DÓNDE VA ===================== -->
+    <section class="section future" id="futuro" aria-labelledby="future-title">
+      <div class="wrap future__grid">
+        <div class="future__text">
+          <p class="eyebrow" data-reveal data-en="What's next">Hacia dónde va</p>
+          <h2 class="title" id="future-title" data-reveal style="--d:.05s" data-en="Today, Barranquilla.<br><span class=&quot;sol-text&quot;>Tomorrow, Latin America.</span>">Hoy, Barranquilla.<br><span class="sol-text">Mañana, América Latina.</span></h2>
+          <p class="lead" data-reveal style="--d:.1s" data-en="For now Talento Caribe is <strong>only for Barranquilla</strong>: the pilot starts here in the first half of 2027. My dream is to take it to <strong>all of Latin America</strong>, so any young person, from Mexico to Argentina, can learn technology for free and without borders.">
+            Por ahora Talento Caribe es <strong>solo para Barranquilla</strong>: aquí arranca el piloto
+            en el primer semestre de 2027. Mi sueño es llevarlo a <strong>toda América Latina</strong>,
+            para que cualquier joven, desde México hasta Argentina, pueda aprender tecnología gratis y sin fronteras.
+          </p>
+          <ol class="stages" data-reveal style="--d:.15s">
+            <li class="stage is-now"><span class="stage__dot"></span><div><strong>Barranquilla</strong><small data-en="Pilot: first half of 2027">Piloto: primer semestre de 2027</small></div></li>
+            <li class="stage"><span class="stage__dot"></span><div><strong data-en="Caribbean region">Región Caribe</strong><small data-en="The next step">El siguiente paso</small></div></li>
+            <li class="stage"><span class="stage__dot"></span><div><strong data-en="All of Colombia">Toda Colombia</strong><small data-en="Growing across the country">Crecer en el país</small></div></li>
+            <li class="stage"><span class="stage__dot"></span><div><strong data-en="Latin America">América Latina</strong><small data-en="The goal">La meta</small></div></li>
+          </ol>
+        </div>
+
+        <!-- Ondas que salen desde Barranquilla -->
+        <div class="radar" data-reveal="zoom" style="--d:.1s" aria-hidden="true">
+          <span class="radar__ring radar__ring--4"><em data-en="Latin America">América Latina</em></span>
+          <span class="radar__ring radar__ring--3"><em>Colombia</em></span>
+          <span class="radar__ring radar__ring--2"><em data-en="Caribbean region">Región Caribe</em></span>
+          <span class="radar__pulse"></span>
+          <span class="radar__pulse radar__pulse--b"></span>
+          <span class="radar__pulse radar__pulse--c"></span>
+          <span class="radar__core"><b>Barranquilla</b><small data-en="It starts here">Aquí empieza</small></span>
+        </div>
+      </div>
+
+      <div class="countries" aria-hidden="true">
+        <div class="countries__track">
+          <span>México</span><span>Guatemala</span><span>Honduras</span><span>El Salvador</span><span>Nicaragua</span><span>Costa Rica</span><span>Panamá</span><span>Cuba</span><span>República Dominicana</span><span>Puerto Rico</span><span>Venezuela</span><span>Colombia</span><span>Ecuador</span><span>Perú</span><span>Bolivia</span><span>Brasil</span><span>Paraguay</span><span>Chile</span><span>Uruguay</span><span>Argentina</span>
+          <span>México</span><span>Guatemala</span><span>Honduras</span><span>El Salvador</span><span>Nicaragua</span><span>Costa Rica</span><span>Panamá</span><span>Cuba</span><span>República Dominicana</span><span>Puerto Rico</span><span>Venezuela</span><span>Colombia</span><span>Ecuador</span><span>Perú</span><span>Bolivia</span><span>Brasil</span><span>Paraguay</span><span>Chile</span><span>Uruguay</span><span>Argentina</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SÚMATE ===================== -->
+    <section class="section join keep-dark" id="sumate" aria-labelledby="join-title">
+      <div class="join__glow" aria-hidden="true"></div>
+      <div class="wrap">
+        <div class="join__head">
+          <p class="eyebrow" data-reveal data-en="Join us">Súmate</p>
+          <h2 class="join__title" id="join-title" data-reveal style="--d:.05s" data-en="This is just the beginning.<br><span class=&quot;sol-text&quot;>Let's build it together.</span>">Esto apenas empieza.<br><span class="sol-text">Construyámoslo juntos.</span></h2>
+          <p class="lead" data-reveal style="--d:.1s" data-en="Talento Caribe is an independent project, made in Barranquilla, about to launch its first pilot. I'm looking for its <strong>first allies</strong>: people, companies and organizations who want to be there from day one and help young people in the Caribbean discover everything they can create.">
+            Talento Caribe es un proyecto independiente, hecho en Barranquilla, que está a punto de arrancar su primer piloto.
+            Estoy buscando a sus <strong>primeros aliados</strong>: personas, empresas y organizaciones que quieran estar
+            desde el principio y ayudar a que los jóvenes del Caribe descubran todo lo que pueden crear.
+          </p>
+        </div>
+
+        <p class="join__ask" data-reveal data-en="How would you like to join? <span>You can pick more than one.</span>">¿Cómo te gustaría sumarte? <span>Puedes elegir varias.</span></p>
+        <div class="ways" role="group" aria-label="Formas de sumarte" data-en-aria-label="Ways to join">
+          <button type="button" class="way" aria-pressed="false" data-way="patrocinar" data-label="Patrocinar el proyecto" data-label-en="Sponsor the project" data-reveal>
+            <span class="way__check" aria-hidden="true">✓</span>
+            <span class="way__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17l-6.1 3.4 1.5-6.8L2.2 9l6.9-.7z"/></svg></span>
+            <span class="way__title" data-en="Sponsor">Patrocinar</span>
+            <span class="way__text" data-en="Fund materials, equipment or connectivity for a course. Your brand, present in what you made possible.">Financia materiales, equipos o conectividad para un curso. Tu marca, presente en lo que hiciste posible.</span>
+          </button>
+          <button type="button" class="way" aria-pressed="false" data-way="ensenar" data-label="Enseñar o ser mentor" data-label-en="Teach or mentor" data-reveal style="--d:.05s">
+            <span class="way__check" aria-hidden="true">✓</span>
+            <span class="way__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 9l9-5 9 5-9 5-9-5z"/><path d="M7 11.5V16c0 1.5 2.5 3 5 3s5-1.5 5-3v-4.5"/></svg></span>
+            <span class="way__title" data-en="Teach or mentor">Enseñar o ser mentor</span>
+            <span class="way__text" data-en="Know programming, electronics or design? Share a few hours with a group.">¿Sabes de programación, electrónica o diseño? Comparte unas horas con una ficha.</span>
+          </button>
+          <button type="button" class="way" aria-pressed="false" data-way="espacio" data-label="Prestar un espacio" data-label-en="Lend a space" data-reveal style="--d:.1s">
+            <span class="way__check" aria-hidden="true">✓</span>
+            <span class="way__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 21V9l9-6 9 6v12z"/><path d="M9 21v-6h6v6"/></svg></span>
+            <span class="way__title" data-en="Lend a space">Prestar un espacio</span>
+            <span class="way__text" data-en="A classroom, a computer lab or a library for the in-person classes.">Un salón, una sala de cómputo o una biblioteca para las clases presenciales.</span>
+          </button>
+          <button type="button" class="way" aria-pressed="false" data-way="equipos" data-label="Donar equipos" data-label-en="Donate equipment" data-reveal style="--d:.15s">
+            <span class="way__check" aria-hidden="true">✓</span>
+            <span class="way__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></span>
+            <span class="way__title" data-en="Donate equipment">Donar equipos</span>
+            <span class="way__text" data-en="Computers, parts or electronics kits that can get a second life teaching.">Computadores, componentes o kits de electrónica que pueden tener una segunda vida enseñando.</span>
+          </button>
+          <button type="button" class="way way--student" aria-pressed="false" data-way="estudiar" data-label="Estudiar en el piloto" data-label-en="Study in the pilot" data-reveal style="--d:.2s">
+            <span class="way__check" aria-hidden="true">✓</span>
+            <span class="way__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span>
+            <span class="way__title" data-en="Study in the pilot">Estudiar en el piloto</span>
+            <span class="way__text" data-en="Live in Barranquilla and want to learn? Be one of Talento Caribe's first students.">¿Vives en Barranquilla y quieres aprender? Sé de los primeros estudiantes de Talento Caribe.</span>
+          </button>
+        </div>
+
+        <div class="join__grid">
+          <div class="join__why">
+            <h3 data-reveal data-en="Why join now">Por qué sumarte ahora</h3>
+            <ul class="reasons">
+              <li data-reveal data-en="<b>Impact you can see.</b> Every contribution becomes something concrete: a course, a group, a young person building their first project."><b>Impacto que se ve.</b> Cada aporte se convierte en algo concreto: un curso, una ficha, un joven construyendo su primer proyecto.</li>
+              <li data-reveal style="--d:.06s" data-en="<b>From day one.</b> Those who join the pilot will be part of Talento Caribe's story from its origin."><b>Desde el día uno.</b> Quienes se sumen al piloto serán parte de la historia de Talento Caribe desde su origen.</li>
+              <li data-reveal style="--d:.12s" data-en="<b>From the Caribbean to Latin America.</b> What starts in Barranquilla has a clear path to grow across the region."><b>Del Caribe para Latinoamérica.</b> Lo que empieza en Barranquilla tiene el camino trazado para crecer por toda la región.</li>
+            </ul>
+
+            <div class="allies" data-reveal style="--d:.15s">
+              <p class="allies__label" data-en="Founding allies">Aliados fundadores</p>
+              <div class="allies__wall" aria-hidden="true">
+                <span data-en="Your logo here">Tu logo aquí</span><span data-en="Your logo here">Tu logo aquí</span><span data-en="Your logo here">Tu logo aquí</span>
+                <span data-en="Your logo here">Tu logo aquí</span><span data-en="Your logo here">Tu logo aquí</span><span data-en="Your logo here">Tu logo aquí</span>
+              </div>
+              <p class="allies__note" data-en="These spots are reserved for those who believe first.">Estos espacios están reservados para quienes crean primero.</p>
+            </div>
+          </div>
+
+          <!-- El formulario envía el mensaje directo a tu correo (FormSubmit, ver config.js) -->
+          <form class="join-form" data-join novalidate data-reveal="zoom" style="--d:.1s">
+            <div class="join-form__body" data-join-body>
+              <h3 data-en="Tell me how you'd like to join">Cuéntame cómo te quieres sumar</h3>
+              <p class="join-form__picked" data-picked aria-live="polite" data-en="Pick one or more ways to join above.">Elige arriba una o varias formas de sumarte.</p>
+              <label class="field">
+                <span data-en="Your name">Tu nombre</span>
+                <input type="text" name="nombre" autocomplete="name" required placeholder="¿Cómo te llamas?" data-en-placeholder="What's your name?">
+              </label>
+              <label class="field">
+                <span data-en="Your email">Tu correo</span>
+                <input type="email" name="correo" autocomplete="email" required placeholder="Para poder responderte" data-en-placeholder="So I can reply to you">
+              </label>
+              <label class="field">
+                <span data-en="Phone or WhatsApp <em>(optional)</em>">Teléfono o WhatsApp <em>(opcional)</em></span>
+                <input type="tel" name="telefono" autocomplete="tel" placeholder="+57 ...">
+              </label>
+              <label class="field">
+                <span data-en="Company or organization <em>(optional)</em>">Empresa u organización <em>(opcional)</em></span>
+                <input type="text" name="org" autocomplete="organization" placeholder="Si vienes en nombre de alguna" data-en-placeholder="If you're writing on behalf of one">
+              </label>
+              <label class="field">
+                <span data-en="Message <em>(optional)</em>">Mensaje <em>(opcional)</em></span>
+                <textarea name="mensaje" rows="3" placeholder="Cuéntame tu idea" data-en-placeholder="Tell me your idea"></textarea>
+              </label>
+              <!-- Trampa para robots: las personas no ven este campo -->
+              <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+              <p class="join-form__error" data-join-error role="alert" hidden></p>
+              <div class="join-form__actions">
+                <button type="submit" class="tbtn tbtn--sol" data-join-submit><span data-en="Send">Enviar</span></button>
+                <button type="button" class="tbtn tbtn--marino-line" data-join-wa data-en="I prefer WhatsApp">Prefiero WhatsApp</button>
+              </div>
+              <p class="join-form__note" data-en="Your message goes straight to my email. I'll get back to you soon.">Tu mensaje me llega directo al correo. Te respondo pronto.</p>
+            </div>
+            <div class="join-form__done" data-join-done hidden tabindex="-1">
+              <span class="join-form__sun" aria-hidden="true"></span>
+              <h3 data-en="Message sent!">¡Mensaje enviado!</h3>
+              <p data-en="Thanks for believing in Talento Caribe. It reached my email and I'll reply very soon.">Gracias por creer en Talento Caribe. Ya me llegó a mi correo y te respondo muy pronto.</p>
+              <button type="button" class="tbtn tbtn--marino-line" data-join-again data-en="Send another">Enviar otro</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="join__share" data-reveal>
+          <p data-en="<b>Know someone who should see this?</b> Sharing is joining too."><b>¿Conoces a alguien que debería ver esto?</b> Compartir también es sumarse.</p>
+          <button type="button" class="tbtn tbtn--line" data-share data-en="Share Talento Caribe">Compartir Talento Caribe</button>
+          <a class="join__peek" href="#" data-cfg-tc target="_blank" rel="noopener"><span data-en="See how the platform is coming along">Mira cómo va la plataforma</span> <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="tcfooter keep-dark">
+    <div class="wrap tcfooter__inner">
+      <div class="tcfooter__brand">
+        <img src="assets/img/talento-caribe/logo-talento-caribe-claro.png" alt="Talento Caribe" width="94" height="80">
+        <p><strong data-en="Your talent has no borders.">Tu talento no tiene fronteras.</strong><br><span data-en="A project by Jose Rodríguez, Barranquilla. © <span data-year>2026</span>">Un proyecto de Jose Rodríguez, Barranquilla. © <span data-year>2026</span></span></p>
+      </div>
+      <nav class="tcfooter__nav" aria-label="Otras páginas" data-en-aria-label="Other pages">
+        <a href="#sumate" data-en="Join Talento Caribe">Súmate a Talento Caribe</a>
+        <a href="index.html" data-go="home" data-en="← Back to portfolio">← Volver al portafolio</a>
+        <a href="kora.html" data-go="kora" data-en="See my other project: Kora →">Ver el otro proyecto: Kora →</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
