@@ -119,10 +119,7 @@
 
       submit.disabled = true;
       submit.classList.add("is-loading");
-      var payload = {
-        _subject: "Talento Caribe · " + d.nombre + " quiere sumarse",
-        _template: "table",
-        _captcha: "false",
+      var datos = {
         "Nombre": d.nombre,
         "email": d.correo,
         "Teléfono": d.telefono || "—",
@@ -131,7 +128,19 @@
         "Mensaje": d.mensaje || "—",
         "Idioma de la página": App.lang === "en" ? "Inglés" : "Español"
       };
-      fetch("https://formsubmit.co/ajax/" + encodeURIComponent(C.formularioDestino || C.correo), {
+      var asunto = "Talento Caribe · " + d.nombre + " quiere sumarse";
+      var url, payload = {};
+      if (C.web3formsKey) {
+        // Web3Forms (config.js → web3formsKey): llega directo a tu correo
+        url = "https://api.web3forms.com/submit";
+        payload = { access_key: C.web3formsKey, subject: asunto, from_name: "Talento Caribe · Súmate", replyto: d.correo };
+      } else {
+        // Respaldo: FormSubmit (config.js → formularioDestino)
+        url = "https://formsubmit.co/ajax/" + encodeURIComponent(C.formularioDestino || C.correo);
+        payload = { _subject: asunto, _template: "table", _captcha: "false" };
+      }
+      Object.keys(datos).forEach(function (k) { payload[k] = datos[k]; });
+      fetch(url, {
         method: "POST",
         headers: { "Content-Type": "application/json", "Accept": "application/json" },
         body: JSON.stringify(payload)

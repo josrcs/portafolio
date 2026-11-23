@@ -18,11 +18,12 @@ window.PORTFOLIO_CONFIG = {
   whatsapp: "573234598684",          // solo números, con el 57 de Colombia
   telefonoVisible: "+57 323 459 8684",
 
-  // A dónde llegan los mensajes del formulario "Súmate" de Talento Caribe.
-  // Usa FormSubmit (gratis, sin cuenta). La PRIMERA vez que alguien lo envíe,
-  // te llega un correo de FormSubmit para activarlo: ábrelo y dale "Activate Form".
-  // Después FormSubmit te da un código (ej. "a1b2c3...") que puedes poner aquí
-  // en lugar de tu correo para que no quede visible en el código.
+  // Formulario "Súmate" de Talento Caribe: los mensajes llegan directo a tu correo.
+  // Usa Web3Forms (gratis, 250 mensajes al mes). Pega aquí la "Access Key" que
+  // te llegó al correo desde web3forms.com. Es seguro dejarla visible.
+  web3formsKey: "6b9ac7c4-5acb-4aa1-a513-c6edfe2c1893",
+
+  // Respaldo: si web3formsKey está vacío, se usa FormSubmit con este correo.
   formularioDestino: "rodcolmenaresjose@gmail.com",
 
   // Animaciones de entrada de Talento Caribe y Kora (false para quitarlas)

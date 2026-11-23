@@ -38,14 +38,12 @@ donar equipos o estudiar en el piloto), escribe su nombre y su correo, y al darl
 el mensaje **te llega directo a rodcolmenaresjose@gmail.com**, con todos los datos en una tabla.
 También puede elegir **Prefiero WhatsApp** para escribirte por ahí.
 
-Funciona con [FormSubmit](https://formsubmit.co) (gratis, sin crear cuenta):
+Funciona con [Web3Forms](https://web3forms.com) (gratis, hasta 250 mensajes al mes).
+La llave (`web3formsKey` en `config.js`) es tu "Access Key" de Web3Forms: es seguro que
+esté en el código público, solo sirve para enviarte mensajes a ti. Si algún día la cambias,
+pide una nueva en web3forms.com con tu correo y pégala ahí.
 
-1. **Actívalo una sola vez:** publica la página (o ábrela con Live Server), llena el formulario
-   y dale Enviar. Te llega un correo de FormSubmit: ábrelo y dale **Activate Form**.
-   Ese primer mensaje de prueba no se entrega; desde ahí, todos los demás sí.
-2. **(Opcional) Esconde tu correo:** después de activarlo, FormSubmit te manda un código
-   largo. Ponlo en `formularioDestino` de `config.js` en lugar de tu correo.
-3. Revisa también la carpeta de spam las primeras veces.
+Revisa también la carpeta de spam las primeras veces y marca el mensaje como "No es spam".
 
 ## Tema claro / oscuro e idioma español / inglés
 
@@ -78,7 +76,8 @@ window.PORTFOLIO_CONFIG = {
   correo: "rodcolmenaresjose@gmail.com",
   whatsapp: "573234598684",
   telefonoVisible: "+57 323 459 8684",
-  formularioDestino: "rodcolmenaresjose@gmail.com", // a dónde llegan los mensajes de Súmate
+  web3formsKey: "6b9ac7c4-...",         // llave de Web3Forms: los mensajes de Súmate llegan a tu correo
+  formularioDestino: "rodcolmenaresjose@gmail.com", // respaldo (FormSubmit) si no hay llave
   intros: true                          // false para quitar las intros
 };
 ```
